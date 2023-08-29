@@ -9,7 +9,7 @@ const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
   return (
     <section
-      id="home"
+      id="#home"
       className="max-container flex justify-center items-center min-h-screen xl:flex-row flex-col p-2 gap-10 w-full"
     >
       <div className=" relative xl:w-2/5 flex flex-col justify-center items-start max-xl:padding-x w-full pt-28 ">
@@ -41,14 +41,14 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-1 relative justify-center w- items-center xl:min-h-screen bg-primary bg-hero bg-cover bg-center -mt-2 ">
+      <div className="flex flex-1 relative justify-center w-full items-center xl:min-h-screen bg-primary bg-hero bg-cover bg-center -mt-2 max-xl:py-20 ">
         <img
           src={bigShoeImg}
           alt=""
           width={500}
           className="z-10 relative object-contain"
         />
-        <div className="flex absolute -bottom-[10%] sm:gap-6 gap-4">
+        <div className="flex absolute xl:-bottom-[10%] lg:-bottom-[15%] max-sm:-bottom-[10%] -bottom-[15%] max-sm:px-6 sm:gap-6 gap-4">
           {shoes.map((shoe) => (
             <div key={shoe}>
               <ShoeCard
